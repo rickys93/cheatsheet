@@ -1,0 +1,54 @@
+.site-title {
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+body {
+    font-family: "Lucida Console";
+    color: gray
+}
+
+
+
+h3 {
+    color: black;
+}
+
+h2,
+h1 {
+    color: white
+}
+
+header {
+    background-color: paleturquoise;
+}
+
+#selectors {
+    background-color: palegreen;
+}
+#specificity {
+    background-color: palevioletred;
+}
+
+.site-footer {
+    height: 100px;
+    background-color: paleturquoise;
+    padding:20px;
+    color: white; 
+    vertical-align:bottom;   
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }

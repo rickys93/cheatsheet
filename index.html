@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS selectors and specificity</title>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">CSS selectors and specificity</h1>
+        <p class="description">CSS is used to improve the appearance of a website. It is built upon the HTML framework.</p>
+    </header>
+    <main>
+        <article>
+        <h2 id="selectors">Selectors</h2>
+        <p class="description">Selectors must follow the following format: (selector) { key:value; }. Multiple keys and values can be used within the same curly bracket, and each key/value pair must be seperated with a semicolon (;).</p>
+        <section>
+            <h3 id="tags">Tags</h3>
+            <p>HTML tags are like keywords which defines that how web browser will format and display the content (eg. &lt;h1&gt; denotes a heading with the highest priority).</p>
+            <p>HTML tags can be selected in css by using the tag type as the selector. For example, changing the text color to red for all h1 elements would be as follows:</p>
+            <p>h1 {<br>text-color : red;<br>}</p>
+            
+        </section>
+        <section>
+            <h3 id="classes">Classes</h3>
+            <p>Any HTML element can be attibuted a class (eg. &lt;h1 class="class-name"&gt;, where class-name is user defined). Multiple elements can be attributed to the same class, meaning that using the class as a css selector will alter all elements in that class.</p>   
+            <p>HTML elements classes can be selected in a css by using .class-name. For example, changing the text size to 15px for all elements in the class "heading" would be as follows:</p>
+            <p>.heading {<br>text-size : 15px;<br>}</p>
+        </section>
+        <section>
+            <h3 id="ids">IDs</h3>
+            <p>Any HTML element can be attibuted an ID (eg. &lt;h1 id="id-name"&gt;, where id-name is user defined).</p>
+            <p>HTML elements classes can be selected in a css by using .class-name. For example, changing the background color to white for element with id="important-text" would be as follows:</p>
+            <p>#important-text {<br>background-color : white;<br>}</p>
+        </section>  
+        </article>
+        <article>
+            <h2 id="specificity">Specificity</h2>
+            <p>Specificity refers to the priority each css selector is given in regards customising the element. If multiple changes of the same type are made to an html element, the selector with the highest priority is used.</p>
+            <p>The order in which css selectors are prioritised is ID, class, tags (from highest to lowest priority).</p>
+            <table id="priority-table" style="width:100%">
+                <tr>
+                    <th>Priority</th>
+                    <th>Type</th>
+                    <th>Example</th>
+                    </tr>
+                    <tr>
+                    <td>1</td>
+                    <td>ID</td>
+                    <td>#important-text</td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>Class</td>
+                    <td>.heading</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Tag</td>
+                    <td>h1</td>
+                </tr>
+            </table>
+            <h3>!important</h3>
+            <p>It is possible to overide the priority by using !important next to the custom css. For example, the following would overide an ID selector, even though it is only a tag selector</p>
+            <p>h1 {<br>text-color : red !important;<br>}</p>
+        </article>
+        <footer class="site-footer">
+            <p class="created-by">Created by Richard Swainson 2021</p>
+        </footer>
+    </main>
+</body>
+</html>
