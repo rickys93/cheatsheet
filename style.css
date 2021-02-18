@@ -8,7 +8,7 @@ body {
 
 header {
     background: url("./img/pattern.webp");
-    /* background-color:rgba(255, 255, 255, 0.5); */
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,7 +20,7 @@ header {
 
 .main-banner {
     width:50%;
-    color:tomato;
+    color:rgb(255, 255, 255);
     opacity:1 important!;
 }
 
