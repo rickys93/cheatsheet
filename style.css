@@ -1,5 +1,27 @@
-.site-title {
-    text-transform: uppercase;
+
+
+
+body {
+    font-family: "Lucida Console";
+    color: gray
+}
+
+header {
+    background: url("./img/pattern.webp");
+    /* background-color:rgba(255, 255, 255, 0.5); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+    text-align: -webkit-center;
+    padding:5%
+
+}
+
+.main-banner {
+    width:50%;
+    color:tomato;
+    opacity:1 important!;
 }
 
 h1,
@@ -8,24 +30,16 @@ h3 {
     text-transform: uppercase;
 }
 
-body {
-    font-family: "Lucida Console";
-    color: gray
+h2{
+    color: white
 }
-
-
 
 h3 {
     color: black;
 }
 
-h2,
-h1 {
-    color: white
-}
-
-header {
-    background-color: paleturquoise;
+.color-heading {
+    padding:10px
 }
 
 #selectors {
@@ -36,11 +50,10 @@ header {
 }
 
 .site-footer {
-    height: 100px;
     background-color: paleturquoise;
-    padding:20px;
-    color: white; 
-    vertical-align:bottom;   
+    padding: 50px;
+    color:tomato;
+    text-align: center;
 }
 
 td, th {

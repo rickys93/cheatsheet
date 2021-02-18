@@ -9,12 +9,14 @@
 </head>
 <body>
     <header>
+        <div class="main-banner">
         <h1 class="site-title">CSS selectors and specificity</h1>
         <p class="description">CSS is used to improve the appearance of a website. It is built upon the HTML framework.</p>
+        </div>
     </header>
     <main>
         <article>
-        <h2 id="selectors">Selectors</h2>
+        <h2 id="selectors" class="color-heading">Selectors</h2>
         <p class="description">Selectors must follow the following format: (selector) { key:value; }. Multiple keys and values can be used within the same curly bracket, and each key/value pair must be seperated with a semicolon (;).</p>
         <section>
             <h3 id="tags">Tags</h3>
@@ -37,7 +39,7 @@
         </section>  
         </article>
         <article>
-            <h2 id="specificity">Specificity</h2>
+            <h2 id="specificity" class="color-heading">Specificity</h2>
             <p>Specificity refers to the priority each css selector is given in regards customising the element. If multiple changes of the same type are made to an html element, the selector with the highest priority is used.</p>
             <p>The order in which css selectors are prioritised is ID, class, tags (from highest to lowest priority).</p>
             <table id="priority-table" style="width:100%">
